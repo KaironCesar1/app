@@ -1,0 +1,9 @@
+
+{
+  "name": "Obreiro Fiel ADACMM",
+  "description": "Aplicativo para gerenciamento de obreiros, escalas, eventos e uniformes da igreja ADACMM.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "prompt": ""
+}

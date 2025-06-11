@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en" class="dark:bg-slate-900">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obreiro Fiel ADACMM</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <style>
+    html { 
+      font-family: 'Inter', sans-serif; 
+      scroll-behavior: smooth;
+    }
+    @supports (font-variation-settings: normal) {
+      html { font-family: 'Inter var', sans-serif; }
+    }
+    body {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      @apply bg-slate-100 dark:bg-slate-900;
+    }
+    /* Custom scrollbar for webkit browsers */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f8fafc; /* Tailwind's slate-50 */
+    }
+    html.dark ::-webkit-scrollbar-track {
+      background: #1e293b; /* Tailwind's slate-800 */
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1; /* Tailwind's slate-300 */
+      border-radius: 10px;
+    }
+    html.dark ::-webkit-scrollbar-thumb {
+      background: #475569; /* Tailwind's slate-600 */
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8; /* Tailwind's slate-400 */
+    }
+    html.dark ::-webkit-scrollbar-thumb:hover {
+      background: #64748b; /* Tailwind's slate-500 */
+    }
+    /* Basic dark mode strategy using class */
+    /* Add this if you want to toggle dark mode manually via JS: document.documentElement.classList.toggle('dark') */
+    /* For system preference: 
+    @media (prefers-color-scheme: dark) {
+      body { @apply bg-slate-900 text-slate-200; }
+    }
+    */
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.6.2"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-slate-100 dark:bg-slate-900">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
